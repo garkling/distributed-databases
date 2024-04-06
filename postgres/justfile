@@ -1,0 +1,38 @@
+set dotenv-load
+set export
+
+venv := "venv"
+pip := "$venv/bin/pip"
+python := "$venv/bin/python"
+
+venv:
+    @[ -d {{venv}} ] || (python3 -m venv {{venv}} && {{pip}} install -r requirements.txt)
+
+
+help: venv
+    {{python}} main.py -h
+
+count-lost-update *FLAGS: venv
+    {{python}} main.py --method lost_update {{FLAGS}}
+
+count-in-place-update *FLAGS: venv
+    {{python}} main.py --method in_place_update {{FLAGS}}
+
+count-row-level-lock *FLAGS: venv
+    {{python}} main.py --method row_level_locking {{FLAGS}}
+
+count-occ *FLAGS: venv
+    {{python}} main.py --method occ {{FLAGS}}
+
+count-all *FLAGS: venv
+    {{python}} main.py {{FLAGS}}
+
+
+init-db:
+    @[ -f user_counter.sql ] && psql postgresql://$POSTGRES_USER:$POSTGRES_PASSWORD@$POSTGRES_HOST:$POSTGRES_PORT/$POSTGRES_DB -f user_counter.sql
+
+start-postgres:
+    sudo docker compose up -d
+
+stop-postgres:
+    sudo docker compose down
