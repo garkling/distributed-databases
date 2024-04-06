@@ -193,7 +193,6 @@ class Query:
             return list(ctx.keys()), eval(query, outer_ctx, ctx)
         except Exception as e:
             print(f'Invalid query - {e}')
-            raise
 
     __add__ = __sub__ = __mul__ = lambda *_: exec('raise(NotImplementedError("Operation is not supported"))')
 

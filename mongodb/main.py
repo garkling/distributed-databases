@@ -1,6 +1,8 @@
 import os
 import json
-from pprint import pprint
+import logging
+from textwrap import indent
+from pprint import pprint, pformat
 from random import randrange
 from datetime import timedelta, datetime, date
 
@@ -15,6 +17,9 @@ host = os.environ["MONGO_HOST"]
 port = int(os.environ["MONGO_PORT"])
 user = os.environ["MONGO_DB_USER"]
 password = os.environ["MONGO_DB_PASSWORD"]
+
+logger = logging.getLogger("mongodb")
+TAB = '\t'
 
 
 class MongoCollection:
@@ -45,6 +50,7 @@ class MongoCollection:
             projection = list(map(str.strip, projection.split(","))) if projection else fields
 
         query_obj = query_obj.project(projection)
+        logger.info(f"MongoDB query: {query_obj.query}\n\tstages:\n{indent(pformat(query_obj.stages), TAB)}")
 
         with self.collection.aggregate(query_obj.stages) as cur:
             return list(cur)
@@ -57,6 +63,7 @@ class MongoCollection:
         _, query_obj = Query.evaluate(f"_id.in_(*{matches})")
         fields, update_query_obj = UpdateQuery.evaluate(update_query, outer_ctx=found[0] if found else None)
 
+        logger.info(f"Update MongoDB query: {update_query_obj.query}\n\tstages:\n{indent(pformat(update_query_obj.stages), TAB)}")
         updated = self.collection.update_many(query_obj.query, update_query_obj.query)
 
         return updated, self.find(query, projection='all')
@@ -67,6 +74,7 @@ class MongoCollection:
 
         _, query_obj = Query.evaluate(f"_id.in_(*{matches})")
 
+        logger.info(f"Remove MongoDB query: {query_obj.query}\n\tstages: {indent(pformat(query_obj.stages), TAB)}")
         updated = self.collection.delete_many(query_obj.query)
 
         return updated, self.find(query, projection='all')
@@ -182,9 +190,12 @@ if __name__ == '__main__':
 
     collection = MongoCollection(args.collection, **create_params) if args.collection else MongoCollection
 
-    prompt = prompts.get(args.operation, lambda *_: {})
-    cmd_kwargs = vars(args)
-    kw = {**prompt(), **{k: cmd_kwargs[k] for k in set(cmd_kwargs).difference(exclude)}}
+    try:
+        prompt = prompts.get(args.operation, lambda *_: {})
+        cmd_kwargs = vars(args)
+        kw = {**prompt(), **{k: cmd_kwargs[k] for k in set(cmd_kwargs).difference(exclude)}}
 
-    res = MongoCollection.apply(collection, args.operation, **kw)
-    pprint(res)
+        res = MongoCollection.apply(collection, args.operation, **kw)
+        pprint(res)
+    except KeyboardInterrupt:
+        print('\nExit')

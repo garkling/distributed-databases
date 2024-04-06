@@ -6,7 +6,7 @@ import logger
 from main import MongoCollection
 
 
-recorder = logger.get_logger(name='task', fmt='%(message)s')
+recorder = logger.get_logger(name='mongodb_console', fmt='%(message)s')
 
 
 items_tasks = {
@@ -15,9 +15,9 @@ items_tasks = {
     '3' : lambda: (items.find("(category == 'TV').count()"),                                                                            "Count items in TV category"),
     '4' : lambda: (items.find("category.distinct().count()"),                                                                           "Count number of distinct categories"),
     '5' : lambda: (items.find("brand.distinct()"),                                                                                      "Get all distinct brands"),
-    '6a': lambda: (items.find("(category == 'Laptops') & (price.between(300, 1500))", projection='all'),                                "Get items in category Laptops in price 300-1500 ($and operator"),
-    '6b': lambda: (items.find("(model == 'S12 Ultra') | (model == 'iPhone 13')", projection='all'),                                     "Get items either of model queried ($or operator)"),
-    '6c': lambda: (items.find("brand.in_('Apple', 'Samsung', 'GameTech')", projection='all'),                                           "Get items of brands listed ($in operator)"),
+    '6a': lambda: (items.find("(category == 'Laptops') & (price.between(300, 1500))", projection='all'),                                "Get items in category Laptops in price 300-1500 ($and operator)"),
+    '6b': lambda: (items.find("(model == 'S12 Ultra') | (model == 'iPhone 13')", projection='all'),                                     "Get items either of model queried (S12 Ultra or iPhone13) ($or operator)"),
+    '6c': lambda: (items.find("brand.in_('Apple', 'Samsung', 'GameTech')", projection='all'),                                           "Get items of brands listed (Apple, Samsung, GameTech) ($in operator)"),
     '7' : lambda: (items.update("storage.in_('1TB SSD', '512GB SSD')", update_query="(RAM == '64GB') & (warranty == '5 years')"),       "Update items with queried storage value by changing RAM and adding a new prop - warranty"),
     '8' : lambda: (items.update("water_resistance.exists()", update_query="price + 300"),                                               "Get items which have water_resistance prop & update them by incrementing price on 300"),
 }
@@ -95,7 +95,7 @@ def __arbitrary_exec(collection, tasks):
         task = tasks[task_number]
         recorder.info(f"{task_number:-^100}")
         *res, desc = task()
-        recorder.info(desc + "\n")
+        recorder.info(f"\n* {desc}\n")
         [recorder.info(pformat(r)) for r in res]
         recorder.info("-" * 100)
         print(f"`{collection}` available tasks: {tuple(tasks)}")
@@ -107,7 +107,7 @@ def __sequential_exec(collection, steps):
         input(f"Press any key -> {step_n+1} step: ")
         recorder.info(f"{step_n+1:-^100}")
         *res, desc = task()
-        recorder.info(desc + "\n")
+        recorder.info(f"\n* {desc}\n")
         [recorder.info(pformat(r)) for r in res]
         recorder.info("-" * 100)
 
@@ -125,7 +125,7 @@ if __name__ == '__main__':
 
     recorder = recorder \
         if not args.record \
-        else logger.get_file_logger(name=f"{args.collection}_tasks", filename=f"{args.collection}_tasks.log", fmt='%(message)s')
+        else logger.get_file_logger(name="mongodb", filename=f"{args.collection}_tasks.log", fmt='%(message)s')
 
     try:
         tasks_to_execute = tasks[args.collection]
