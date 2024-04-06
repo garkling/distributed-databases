@@ -37,13 +37,13 @@ Rename `tmp.env` to/create `.env`, and fill in the required args
 - `MONGO_INITDB_DATABASE` better be the same as `MONGO_DATABASE`
 
 If you have `just` command runner:  
-- `just -l` - to list all commands
-- `just venv` - to create a Python env and install dependencies
-- `just start-mongo` to start Docker service
-- `just stop-mongo` to stop Docker service
-- `just help` to show the help for the MongoDB client wrapper & task executor
+- `just -l` - list all commands
+- `just venv` - create a Python env and install dependencies
+- `just start-mongo` - start the Docker service
+- `just stop-mongo` - stop the Docker service
+- `just help` - show the help for the MongoDB client wrapper & task executor
 - `just populate` - populate the `items`/`orders` collections (initial items are stored in `items.json`)
-- `just <operation> <collection> <flags>` - to apply the operation for the given collection (see [Operation](#operations) section)
+- `just <operation> <collection> <flags>` - apply the operation for the given collection (see [Operation](#operations) section)
 
 Without `just`:
 - `ENV_NAME=<env_name>`
@@ -52,6 +52,7 @@ Without `just`:
 - `pip install -r requirements.txt`
 - replace `just` in the command by `python main.py` for running the query executor (see [Query executor](#playground--query-executor) section)
 - replace `just task` in the command by `python tasks.py` for executing prepared tasks (see [Task executor](#task-executor) section)
+- use `docker compose up`/`down` to start/stop the Docker service
 
 When you execute the command, depending on the selected operation, you will see one or more input prompts one after the other.  
 Use [Syntax](#syntax) chapter for reference
