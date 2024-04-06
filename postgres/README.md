@@ -31,7 +31,7 @@ Specify `--iters <integer>` to set a number of increment request from each 'conn
 
 
 ## Methods & results
-### `lost update`
+### [`lost update`](https://github.com/garkling/distributed-databases/blob/ddf84bceb7ca03ef903a57f9ee5140c4cee9c3f9/postgres/main.py#L37)
 **Read before write, increment on the client side, no update locks, causes a race condition**
 
 `just count-lost-update`/`python main.py --method lost_update`
@@ -41,7 +41,7 @@ Time `~318 seconds`
 Time range between `1th` and `10th` connection `307-318 seconds`
 
 
-### `in-place update`
+### [`in-place update`](https://github.com/garkling/distributed-databases/blob/ddf84bceb7ca03ef903a57f9ee5140c4cee9c3f9/postgres/main.py#L48)
 **Direct update attempts, increment on the server side, more reliable**
 
 `just count-in-place-update`/`python main.py --method in_place_update`
@@ -51,7 +51,7 @@ Time `~315 seconds`
 Time range between `1th` and `10th` connection `307-315 seconds`
 
 
-### `row-level locking`
+### [`row-level locking`](https://github.com/garkling/distributed-databases/blob/ddf84bceb7ca03ef903a57f9ee5140c4cee9c3f9/postgres/main.py#L57)
 **Explicit update locks, pessimistic locking, increment of the client side**
 
 `just count-row-level-lock`/`python main.py --method row_level_locking`
@@ -61,7 +61,7 @@ Time `~335 seconds`
 Time range between `1th` and `10th` connection `330-335 seconds`
 
 
-### `optimistic concurrency control`
+### [`optimistic concurrency control`](https://github.com/garkling/distributed-databases/blob/ddf84bceb7ca03ef903a57f9ee5140c4cee9c3f9/postgres/main.py#L68)
 **Involves `version` column (at this case), constant conflict resolution & checks between read and write during high concurrency**
 
 `just count-occ`/`python main.py --method occ`
