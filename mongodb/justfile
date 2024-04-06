@@ -1,0 +1,47 @@
+set dotenv-load
+set export
+
+venv := "venv"
+pip := "$venv/bin/pip"
+python := "$venv/bin/python"
+
+venv:
+    @[ -d {{venv}} ] || (python3 -m venv {{venv}} && {{pip}} install -r requirements.txt)
+
+
+help: venv
+    {{python}} main.py -h
+    {{python}} tasks.py -h
+
+run operation *FLAGS: venv
+    {{python}} main.py {{operation}} {{FLAGS}}
+
+populate: venv
+    {{python}} main.py populate
+
+get collection *FLAGS: venv
+    {{python}} main.py get {{collection}} {{FLAGS}}
+
+insert collection *FLAGS: venv
+    {{python}} main.py insert {{collection}} {{FLAGS}}
+
+insert_many collection *FLAGS: venv
+    {{python}} main.py insert_many {{collection}} {{FLAGS}}
+
+update collection: venv
+    {{python}} main.py update {{collection}}
+
+remove collection: venv
+    {{python}} main.py remove {{collection}}
+
+drop collection: venv
+    {{python}} main.py drop {{collection}}
+
+task collection *FLAGS: venv
+    {{python}} tasks.py {{collection}} {{FLAGS}}
+
+start-mongo:
+    sudo docker compose up -d
+
+stop-mongo:
+    sudo docker compose down
