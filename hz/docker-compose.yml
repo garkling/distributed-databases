@@ -1,0 +1,46 @@
+services:
+
+  hazelcast1:
+    image: hazelcast/hazelcast:5.3.6
+    hostname: hazelcast01
+    container_name: hazelcast1
+
+    ports:
+      - "5701:5701"
+
+    environment:
+      HAZELCAST_CONFIG: hazelcast-config.yaml
+      HZ_NETWORK_PUBLICADDRESS: hazelcast01:5701
+
+    volumes:
+      - ./hazelcast-config.yaml:/opt/hazelcast/hazelcast-config.yaml
+
+  hazelcast2:
+    image: hazelcast/hazelcast:5.3.6
+    hostname: hazelcast02
+    container_name: hazelcast2
+
+    ports:
+      - "5702:5701"
+
+    environment:
+      HAZELCAST_CONFIG: hazelcast-config.yaml
+      HZ_NETWORK_PUBLICADDRESS: hazelcast02:5701
+
+    volumes:
+      - ./hazelcast-config.yaml:/opt/hazelcast/hazelcast-config.yaml
+
+  hazelcast3:
+    image: hazelcast/hazelcast:5.3.6
+    hostname: hazelcast03
+    container_name: hazelcast3
+
+    ports:
+      - "5703:5701"
+
+    environment:
+      HAZELCAST_CONFIG: hazelcast-config.yaml
+      HZ_NETWORK_PUBLICADDRESS: hazelcast03:5701
+
+    volumes:
+      - ./hazelcast-config.yaml:/opt/hazelcast/hazelcast-config.yaml

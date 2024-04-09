@@ -1,0 +1,23 @@
+apiVersion: hazelcast.com/v1alpha1
+kind: Hazelcast
+metadata:
+  name: hazelcast
+  namespace: hazelcast-ns
+  labels:
+    app: hazelcast
+spec:
+  clusterSize: 3
+  repository: 'docker.io/hazelcast/hazelcast-enterprise'
+  version: '5.3.5-slim'
+  licenseKeySecretName: hazelcast-license-key
+  customConfigCmName: hazelcast-config
+  cpSubsystem:
+    groupSize: 3
+    sessionTTLSeconds: 30
+    missingCpMemberAutoRemovalSeconds: 7200
+    pvc:
+      accessModes: [ "ReadWriteOnce" ]
+      requestStorage: 8Gi
+  exposeExternally:
+    type: Unisocket
+    discoveryServiceType: LoadBalancer

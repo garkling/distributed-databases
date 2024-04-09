@@ -1,0 +1,43 @@
+set dotenv-load
+set export
+
+venv := "venv"
+pip := "$venv/bin/pip"
+python := "$venv/bin/python"
+
+venv:
+    @[ -d {{venv}} ] || (python3 -m venv {{venv}} && {{pip}} install -r requirements.txt)
+
+help: venv
+    {{python}} main.py -h
+
+count-imap-non-blocking *FLAGS: venv
+    {{python}} main.py --method imap_non_blocking {{FLAGS}}
+
+count-imap-pessimistic-lock *FLAGS: venv
+    {{python}} main.py --method imap_pes_lock {{FLAGS}}
+
+count-imap-optimistic-lock *FLAGS: venv
+    {{python}} main.py --method imap_opt_lock {{FLAGS}}
+
+count-iatomiclong *FLAGS: venv
+    {{python}} main.py --method iatomiclong {{FLAGS}}
+
+
+count-no-cp *FLAGS: venv
+    {{python}} main.py --method imap_non_blocking {{FLAGS}}
+    {{python}} main.py --method imap_pes_lock {{FLAGS}}
+    {{python}} main.py --method imap_opt_lock {{FLAGS}}
+
+count-all *FLAGS: venv
+    {{python}} main.py {{FLAGS}}
+
+
+start:
+    sudo docker compose up -d
+
+stop:
+    sudo docker compose down
+
+logs:
+    sudo docker compose logs -f
