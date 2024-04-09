@@ -31,8 +31,11 @@ count-all *FLAGS: venv
 init-db:
     @[ -f user_counter.sql ] && psql postgresql://$POSTGRES_USER:$POSTGRES_PASSWORD@$POSTGRES_HOST:$POSTGRES_PORT/$POSTGRES_DB -f user_counter.sql
 
-start-postgres:
+start:
     sudo docker compose up -d
 
-stop-postgres:
+stop:
     sudo docker compose down
+
+logs:
+    sudo docker compose logs -f

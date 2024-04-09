@@ -1,4 +1,4 @@
-# `PostgreSQL` parallel counter
+# `PostgreSQL` concurrent counter increment
 ### Testing of different methods of simultaneous update of a common counter on the Postgres
 
 ## Run
@@ -11,8 +11,9 @@ If you have `just` command runner:
 - `just -l` - list all commands
 - `just venv` - create a Python env and install dependencies
 - `just help` - show the help for the script execution parameters
-- `just start-postgres` - start the Docker service
-- `just stop-postgres` - stop the Docker service
+- `just start` - start the Docker service
+- `just stop` - stop the Docker service
+- `just logs` - show the Docker logs
 - `just init-db` - drop & create a table `user_counter` (it will init automatically)
 - `just <method> <flags>` - run the counter with a specified method
 - `just count-all <flags>` - run the counter with all methods in order
@@ -22,7 +23,7 @@ Without `just`:
 - `python3 -m venv $ENV_NAME`
 - `source $ENV_NAME/bin/activate`
 - `pip install -r requirements.txt`
-- use `docker compose up`/`down` to start/stop the Docker service
+- use `docker compose up`/`down`/`logs -f` to start/stop/logs the Docker service(s)
 - replace `just` in the script execution commands by `python main.py --method`
 - `python main.py --method <method> <flags>`
 
@@ -36,7 +37,7 @@ Specify `--iters <integer>` to set a number of increment request from each 'conn
 
 `just count-lost-update`/`python main.py --method lost_update`
 
-With the `--connections 10` and `--iters 10000` the result is close to `10000`, but nondeterministic  
+With the `--connections 10 --iters 10000` the result is close to `10000`, but nondeterministic  
 Time `~318 seconds`  
 Time range between `1th` and `10th` connection `307-318 seconds`
 
@@ -46,7 +47,7 @@ Time range between `1th` and `10th` connection `307-318 seconds`
 
 `just count-in-place-update`/`python main.py --method in_place_update`
 
-With the `--connections 10` and `--iters 10000` the result is `100000`  
+With the `--connections 10 --iters 10000` the result is `100000`  
 Time `~315 seconds`  
 Time range between `1th` and `10th` connection `307-315 seconds`
 
@@ -56,7 +57,7 @@ Time range between `1th` and `10th` connection `307-315 seconds`
 
 `just count-row-level-lock`/`python main.py --method row_level_locking`
 
-With the `--connections 10` and `--iters 10000` the result is `100000`  
+With the `--connections 10 --iters 10000` the result is `100000`  
 Time `~335 seconds`  
 Time range between `1th` and `10th` connection `330-335 seconds`
 
@@ -66,6 +67,6 @@ Time range between `1th` and `10th` connection `330-335 seconds`
 
 `just count-occ`/`python main.py --method occ`
 
-With the `--connections 10` and `--iters 10000` the result is `100000`  
+With the `--connections 10 --iters 10000` the result is `100000`  
 Time `~2556 seconds`  
 Time range between `1th` and `10th` connection `1534-2556 seconds`

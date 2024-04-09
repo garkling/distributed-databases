@@ -110,9 +110,12 @@ if __name__ == '__main__':
     from executor import ProcessExecutor
 
     parser = argparse.ArgumentParser(description='Postgres DB counter update methods')
-    parser.add_argument('--method', type=str, choices=methods, action='append', dest='methods', required=False, help='Method of incrementing the counter from multiple connections')
-    parser.add_argument('--connections', type=int, default=10, required=False, help="Number of simultaneous `connections` (process workers)")
-    parser.add_argument('--iters', type=int, default=10_000, required=False, help="Number of counter increment requests from each `connection`")
+    parser.add_argument('--method', type=str, choices=methods, action='append', dest='methods', required=False,
+                        help='Method of incrementing the counter from multiple connections')
+    parser.add_argument('--connections', type=int, default=10, required=False,
+                        help="Number of simultaneous `connections` (process workers)")
+    parser.add_argument('--iters', type=int, default=10_000, required=False,
+                        help="Number of counter increment requests from each `connection`")
 
     args = parser.parse_args()
     for method in (args.methods or methods):
