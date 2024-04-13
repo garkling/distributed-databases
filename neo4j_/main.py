@@ -1,4 +1,5 @@
 import os
+import sys
 from contextlib import contextmanager
 
 try:
@@ -11,11 +12,16 @@ from dotenv import load_dotenv
 from neo4j import GraphDatabase, Result
 
 from queries import query_dict, node_props, formats
+sys.path.append('..')
+from logger import get_file_logger
+
 
 load_dotenv()
 URI = "bolt://localhost:7687"
 AUTH = tuple(os.environ['NEO4J_AUTH'].split('/'))
 DEFAULT_DB = "neo4j"
+
+logger = get_file_logger('bookstore', filename='neo4j.log', fmt="%(message)s")
 
 
 @contextmanager
@@ -73,13 +79,13 @@ prompts = {
 
 def __output_as_table(result):
     records, summary, keys = result
-    print(f"Query {summary.query}\nwith parameters {summary.parameters} --->\n")
+    logger.info(f"Query {summary.query}\nwith parameters {summary.parameters} --->\n")
     if records:
-        print(tabulate([rec.data() for rec in records], headers='keys', tablefmt='outline', showindex=range(1, len(records) + 1)))
+        logger.info(tabulate([rec.data() for rec in records], headers='keys', tablefmt='outline', showindex=range(1, len(records) + 1)))
     else:
-        print(tabulate([], headers=keys, tablefmt='outline'))
+        logger.info(tabulate([], headers=keys, tablefmt='outline'))
 
-    print()
+    logger.info("")
 
 
 def __output_as_graph(graph):
@@ -103,7 +109,7 @@ def __output_as_graph(graph):
 def __run_interactive_mode():
     cases = list(query_dict)
     menu = '\n'.join(f"[{i + 1:2}]: {case}" for i, case in enumerate(cases))
-    print(menu)
+    logger.info(menu)
     while True:
         try:
             choice = input("Enter a case number (leave empty to exit/`h` to show cases): ").lower()
@@ -122,8 +128,8 @@ def __run_interactive_mode():
                 in_graph = input("Output in graph? (Y/y/yes) (if no, output in table): ").lower() in ('y', 'yes')
                 format_ = formats[in_graph]
 
-            print(f"The specified query`s result will be formatted in the `{format_}` view")
-            print(f"{case:-^100}")
+            logger.info(f"The specified query`s result will be formatted in the `{format_}` view")
+            logger.info(f"{case:-^100}")
         except (ValueError, IndexError):
             print('Invalid input')
             continue
