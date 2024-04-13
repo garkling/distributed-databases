@@ -4,7 +4,7 @@
 
 
 ## Structure
-![bookstore-graph.png](..%2F..%2F..%2F..%2FPictures%2FScreenshots%2Fbookstore-graph.png)
+![bookstore-graph](https://github.com/garkling/distributed-databases/assets/70725591/15fb983d-cc64-48c4-aec9-0aba04e7b19e)
 ### Node labels
 - `Book` - 40 nodes
 - `Author` - 32 nodes
