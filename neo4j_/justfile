@@ -1,0 +1,32 @@
+set dotenv-load
+set export
+
+venv := "venv"
+pip := "$venv/bin/pip"
+python := "$venv/bin/python"
+
+venv:
+    @[ -d {{venv}} ] || (python3 -m venv {{venv}} && {{pip}} install -r requirements.txt)
+
+
+help: venv
+    {{python}} main.py -h
+
+create-graph: venv
+    {{python}} main.py create-graph
+
+delete-graph: venv
+    {{python}} main.py delete-graph
+
+run: venv
+    {{python}} main.py run
+
+
+start:
+    sudo docker compose up -d
+
+stop:
+    sudo docker compose down
+
+logs:
+    sudo docker compose logs -f
