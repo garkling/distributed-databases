@@ -1,0 +1,1303 @@
+[
+  {
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "model": "Samsung Galaxy S22 Ultra",
+    "price": 1199.99,
+    "properties": {
+      "display": "6.8 inches Dynamic AMOLED",
+      "processor": "Exynos 2200",
+      "RAM": "12GB",
+      "storage": "256GB",
+      "battery": "5000mAh",
+      "camera": "108MP + 12MP + 12MP + 12MP",
+      "reverse_charging": ">30%",
+      "fast_charge": "30W",
+      "wireless_charge": "10W",
+      "e_sim": "supported",
+      "color": "Phantom Black"
+    }
+  },
+  {
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "model": "Samsung Galaxy Z Fold 3",
+    "price": 1799.99,
+    "properties": {
+      "display": "7.6 inches Foldable Dynamic AMOLED",
+      "processor": "Snapdragon 888",
+      "RAM": "12GB",
+      "storage": "GB",
+      "battery": "4400mAh",
+      "fast_charge": "30W",
+      "camera": "12MP + 12MP + 12MP",
+      "color": "Phantom Green"
+    }
+  },
+  {
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "model": "Samsung Galaxy S21",
+    "price": 799.99,
+    "properties": {
+      "display": "6.2 inches Dynamic AMOLED",
+      "processor": "Exynos 2100",
+      "RAM": "8GB",
+      "storage": "128GB",
+      "battery": "4000mAh",
+      "camera": "64MP + 12MP + 12MP",
+      "wireless_charge": "10W",
+      "reverse_charging": ">35%",
+      "color": "Phantom Violet"
+    }
+  },
+  {
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "model": "Samsung Galaxy A52s 5G",
+    "price": 499.99,
+    "properties": {
+      "display": "6.5 inches Super AMOLED",
+      "processor": "Snapdragon 778G",
+      "RAM": "6GB",
+      "storage": "128GB",
+      "battery": "4500mAh",
+      "camera": "64MP + 12MP + 5MP + 5MP",
+      "e_sim": "supported",
+      "color": "Awesome Black"
+    }
+  },
+  {
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "model": "Samsung Galaxy Note 20 Ultra",
+    "price": 1299.99,
+    "properties": {
+      "display": "6.9 inches Dynamic AMOLED",
+      "processor": "Exynos 990",
+      "RAM": "12GB",
+      "storage": "256GB",
+      "battery": "4500mAh",
+      "camera": "108MP + 12MP + 12MP",
+      "color": "Mystic Bronze"
+    }
+  },
+  {
+    "category": "Smartphones",
+    "brand": "Huawei",
+    "model": "Huawei P50 Pro",
+    "price": 1099.99,
+    "properties": {
+      "display": "6.6 inches OLED",
+      "processor": "Kirin 9000",
+      "RAM": "8GB",
+      "storage": "256GB",
+      "battery": "4360mAh",
+      "camera": "50MP + 64MP + 13MP",
+      "e_sim": "supported",
+      "color": "Golden Black"
+    }
+  },
+  {
+    "category": "Smartphones",
+    "brand": "Huawei",
+    "model": "Huawei Mate 40 Pro",
+    "price": 999.99,
+    "properties": {
+      "display": "6.76 inches OLED",
+      "processor": "Kirin 9000E",
+      "RAM": "8GB",
+      "storage": "256GB",
+      "battery": "4400mAh",
+      "camera": "50MP + 12MP + 20MP",
+      "reverse_charging": ">30%",
+      "fast_charge": "30W",
+      "wireless_charge": "15W",
+      "color": "Mystic Silver"
+    }
+  },
+  {
+    "category": "Smartphones",
+    "brand": "Huawei",
+    "model": "Huawei Nova 9",
+    "price": 599.99,
+    "properties": {
+      "display": "6.57 inches OLED",
+      "processor": "Kirin 985",
+      "RAM": "8GB",
+      "storage": "256GB",
+      "battery": "4300mAh",
+      "camera": "50MP + 8MP + 2MP + 2MP",
+      "color": "Icelandic Frost"
+    }
+  },
+  {
+    "category": "Smartphones",
+    "brand": "Huawei",
+    "model": "Huawei P40",
+    "price": 699.99,
+    "properties": {
+      "display": "6.1 inches OLED",
+      "processor": "Kirin 990",
+      "RAM": "8GB",
+      "storage": "128GB",
+      "battery": "3800mAh",
+      "camera": "50MP + 8MP + 16MP",
+      "color": "Deep Sea Blue"
+    }
+  },
+  {
+    "category": "Smartphones",
+    "brand": "Huawei",
+    "model": "Huawei Enjoy 20 Plus",
+    "price": 299.99,
+    "properties": {
+      "display": "6.63 inches IPS LCD",
+      "processor": "Dimensity 720",
+      "RAM": "8GB",
+      "storage": "128GB",
+      "battery": "4200mAh",
+      "camera": "48MP + 8MP + 2MP",
+      "color": "Magic Night Black"
+    }
+  },
+  {
+    "category": "Smartphones",
+    "brand": "Apple",
+    "model": "iPhone 13 Pro Max",
+    "price": 1099.99,
+    "properties": {
+      "display": "6.7-inch Super Retina XDR",
+      "camera": "12MP + 12MP + 12MP",
+      "processor": "Apple A15 Bionic",
+      "RAM": "6GB",
+      "storage": "256GB",
+      "battery": "4352mAh",
+      "e_sim": "supported",
+      "fast_charge": "20W",
+      "wireless_charge": "10W",
+      "color": "Deep Sea Blue"
+    }
+  },
+  {
+    "category": "Smartphones",
+    "brand": "Apple",
+    "model": "iPhone 12 Pro",
+    "price": 1099.99,
+    "props": {
+      "display": "6.1 inches Super Retina XDR",
+      "camera": "12MP + 12MP + 12MP",
+      "processor": "Apple A14 Bionic",
+      "RAM": "6GB",
+      "storage": "256GB",
+      "battery": "3687 mAh",
+      "fast_charge": "20W",
+      "wireless_charge": "10W",
+      "color": "Pacific Blue"
+    }
+  },
+  {
+    "category": "Smartphones",
+    "brand": "Google",
+    "model": "Pixel 6 Pro",
+    "price": 899.99,
+    "properties": {
+      "display": "6.7-inch OLED",
+      "camera": "50MP + 12MP",
+      "processor": "Google Tensor",
+      "RAM": "12GB",
+      "storage": "256GB",
+      "battery": "5000mAh",
+      "e_sim": "supported",
+      "color": "Graphite Black"
+    }
+  },
+  {
+    "category": "Smartphones",
+    "brand": "OnePlus",
+    "model": "OnePlus 9 Pro",
+    "price": 1069.99,
+    "properties": {
+      "display": "6.7-inch Fluid AMOLED",
+      "camera": "48MP + 50MP + 8MP + 2MP",
+      "processor": "Qualcomm Snapdragon 888",
+      "RAM": "8GB",
+      "storage": "256GB",
+      "battery": "4500mAh",
+      "fast_charge": "20W",
+      "color": "Cyan Black"
+    }
+  },
+  {
+    "category": "Smartphones",
+    "brand": "Xiaomi",
+    "model": "Mi 11 Ultra",
+    "price": 1199.99,
+    "properties": {
+      "display": "6.81-inch AMOLED",
+      "camera": "50MP + 48MP + 48MP",
+      "processor": "Qualcomm Snapdragon 888",
+      "RAM": "12GB",
+      "storage": "256GB",
+      "battery": "5000mAh",
+      "color": "Emerald Green"
+    }
+  },
+  {
+    "category": "Smartphones",
+    "brand": "Sony",
+    "model": "Xperia 1 III",
+    "price": 1299.99,
+    "properties": {
+      "display": "6.5-inch OLED",
+      "camera": "12MP + 12MP + 12MP",
+      "processor": "Qualcomm Snapdragon 888",
+      "RAM": "12GB",
+      "storage": "256GB",
+      "battery": "4500mAh",
+      "fast_charge": "30W",
+      "wireless_charge": "10W",
+      "color": "Sky Blue"
+    }
+  },
+  {
+    "category": "Tablets",
+    "brand": "Apple",
+    "model": "iPad Pro (12.9-inch, 5th Gen)",
+    "price": 1099.99,
+    "properties": {
+      "display": "12.9-inch Liquid Retina XDR",
+      "processor": "Apple M1",
+      "RAM": "8GB",
+      "storage": "128GB",
+      "fast_charge": "30W",
+      "wireless_charge": "15W",
+      "battery": "10090mAh",
+      "keyboard_support": "Yes"
+    }
+  },
+  {
+    "category": "Tablets",
+    "brand": "Samsung",
+    "model": "Galaxy Tab S7+",
+    "price": 849.99,
+    "properties": {
+      "display": "12.4-inch Super AMOLED",
+      "processor": "Qualcomm Snapdragon 865+",
+      "RAM": "8GB",
+      "storage": "256GB",
+      "fast_charge": "30W",
+      "battery": "10090mAh",
+      "keyboard_support": "Yes"
+    }
+  },
+  {
+    "category": "Tablets",
+    "brand": "Microsoft",
+    "model": "Surface Pro 7",
+    "price": 899.99,
+    "properties": {
+      "display": "12.3-inch PixelSense",
+      "processor": "Intel Core i5",
+      "RAM": "8GB",
+      "storage": "256GB",
+      "battery": "5400mAh"
+    }
+  },
+  {
+    "category": "Tablets",
+    "brand": "Lenovo",
+    "model": "Tab P11 Pro",
+    "price": 499.99,
+    "properties": {
+      "display": "11.5-inch OLED",
+      "processor": "Qualcomm Snapdragon 730G",
+      "RAM": "6GB",
+      "storage": "128GB",
+      "battery": "8600mAh"
+    }
+  },
+  {
+    "category": "Tablets",
+    "brand": "Amazon",
+    "model": "Fire HD 10",
+    "price": 149.99,
+    "properties": {
+      "display": "10.1-inch Full HD",
+      "processor": "Octa-core",
+      "RAM": "2GB",
+      "storage": "32GB",
+      "battery": "4555mAh"
+    }
+  },
+  {
+    "category": "Laptops",
+    "brand": "Apple",
+    "model": "MacBook Air (M1, 2020)",
+    "price": 999.99,
+    "properties": {
+      "display": "13.3-inch Retina",
+      "processor": "Apple M1",
+      "RAM": "8GB LPDDR4x",
+      "storage": "256GB SSD",
+      "battery": "Up to 15 hours",
+      "graphics": "Integrated Apple graphics",
+      "os": "macOS 12 Monterey",
+      "screen_matrix": "IPS",
+      "thunderbolt": "Yes"
+    }
+  },
+  {
+    "category": "Laptops",
+    "brand": "Dell",
+    "model": "XPS 13",
+    "price": 1299.99,
+    "properties": {
+      "display": "13.4-inch InfinityEdge",
+      "processor": "Intel Core i7-1165G7",
+      "RAM": "16GB DDR4",
+      "storage": "512GB SSD",
+      "battery": "Up to 14 hours",
+      "graphics": "Intel Iris Xe Graphics",
+      "os": "Windows 11",
+      "screen_matrix": "IPS",
+      "type_c_pd": "60W"
+    }
+  },
+  {
+    "category": "Laptops",
+    "brand": "Lenovo",
+    "model": "ThinkPad X1 Carbon Gen 9",
+    "price": 1699.75,
+    "properties": {
+      "display": "14-inch IPS",
+      "processor": "Intel Core i7-1165G7",
+      "RAM": "16GB DDR4",
+      "storage": "1TB SSD",
+      "battery": "Up to 15 hours",
+      "graphics": "Integrated Intel Iris Xe Graphics",
+      "os": "Windows 11",
+      "screen_matrix": "IPS"
+    }
+  },
+  {
+    "category": "Laptops",
+    "brand": "HP",
+    "model": "Spectre x360",
+    "price": 1499.99,
+    "properties": {
+      "display": "13.3-inch OLED",
+      "processor": "Intel Core i7-1165G7",
+      "RAM": "16GB DDR4",
+      "storage": "512GB SSD",
+      "battery": "Up to 11 hours",
+      "graphics": "Intel Iris Xe Graphics",
+      "os": "Windows 10",
+      "screen_matrix": "OLED",
+      "type_c_pd": "60W"
+    }
+  },
+  {
+    "category": "Laptops",
+    "brand": "ASUS",
+    "model": "ZenBook 14",
+    "price": 1099.99,
+    "properties": {
+      "display": "14-inch Full HD",
+      "processor": "Intel Core i7-1165G7",
+      "RAM": "16GB DDR4",
+      "storage": "512GB SSD",
+      "battery": "Up to 13 hours",
+      "graphics": "Integrated Intel Iris Xe Graphics",
+      "os": "Windows 10",
+      "screen_matrix": "IPS"
+    }
+  },
+  {
+    "category": "Laptops",
+    "brand": "Acer",
+    "model": "Swift 5",
+    "price": 899.99,
+    "properties": {
+      "display": "14-inch Full HD",
+      "processor": "Intel Core i7-1165G7",
+      "RAM": "8GB DDR4",
+      "storage": "1TB SSD",
+      "battery": "Up to 15 hours",
+      "graphics": "Integrated Intel Iris Xe Graphics",
+      "os": "Windows 10",
+      "screen_matrix": "IPS"
+    }
+  },
+  {
+    "category": "Laptops",
+    "brand": "Microsoft",
+    "model": "Surface Laptop 4",
+    "price": 1399.75,
+    "properties": {
+      "display": "13.5-inch PixelSense",
+      "processor": "Intel Core i7-1185G7",
+      "RAM": "32GB DDR4",
+      "storage": "512GB SSD",
+      "battery": "Up to 17 hours",
+      "graphics": "Intel Iris Xe Graphics",
+      "os": "Windows 11",
+      "screen_matrix": "IPS"
+    }
+  },
+  {
+    "category": "Laptops",
+    "brand": "Razer",
+    "model": "Blade 15 Base",
+    "price": 1899.99,
+    "properties": {
+      "display": "15.6-inch Full HD",
+      "processor": "Intel Core i7-10750H",
+      "RAM": "32GB DDR4",
+      "storage": "512GB SSD",
+      "battery": "Up to 6 hours",
+      "graphics": "NVIDIA GeForce GTX 1660 Ti",
+      "os": "Windows 11",
+      "screen_matrix": "IPS"
+    }
+  },
+  {
+    "category": "Laptops",
+    "brand": "MSI",
+    "model": "GS66 Stealth",
+    "price": 1999.99,
+    "properties": {
+      "display": "15.6-inch Full HD",
+      "processor": "Intel Core i9-11900H",
+      "RAM": "32GB DDR5",
+      "storage": "1TB SSD",
+      "battery": "Up to 8 hours",
+      "graphics": "NVIDIA GeForce RTX 3080",
+      "os": "Windows 10",
+      "screen_matrix": "IPS"
+    }
+  },
+  {
+    "category": "Laptops",
+    "brand": "LG",
+    "model": "Gram 17",
+    "price": 1699.99,
+    "properties": {
+      "display": "17-inch WQXGA",
+      "processor": "Intel Core i7-1165G7",
+      "RAM": "16GB DDR4",
+      "storage": "1TB SSD",
+      "battery": "Up to 19.5 hours",
+      "graphics": "Integrated Intel Iris Xe Graphics",
+      "os": "Windows 10",
+      "screen_matrix": "IPS"
+    }
+  },
+  {
+    "category": "Laptops",
+    "brand": "Gigabyte",
+    "model": "AERO 15 OLED",
+    "price": 2199.99,
+    "properties": {
+      "display": "15.6-inch 4K UHD",
+      "processor": "Intel Core i7-10870H",
+      "RAM": "16GB DDR5",
+      "storage": "512GB SSD",
+      "battery": "Up to 8 hours",
+      "graphics": "NVIDIA GeForce RTX 3070",
+      "os": "Windows 10",
+      "screen_matrix": "OLED"
+    }
+  },
+  {
+    "category": "Laptops",
+    "brand": "Huawei",
+    "model": "MateBook X Pro",
+    "price": 1299.99,
+    "properties": {
+      "display": "13.9-inch 3K Touch",
+      "processor": "Intel Core i7-1165G7",
+      "RAM": "12GB DDR4",
+      "storage": "1TB SSD",
+      "battery": "Up to 10 hours",
+      "graphics": "Integrated Intel Iris Xe Graphics",
+      "os": "Windows 10",
+      "screen_matrix": "IPS"
+    }
+  },
+  {
+    "category": "Laptops",
+    "brand": "Alienware",
+    "model": "m15 R6",
+    "price": 2299.75,
+    "properties": {
+      "display": "15.6-inch Full HD",
+      "processor": "Intel Core i7-11800H",
+      "RAM": "32GB DDR5",
+      "storage": "1TB SSD",
+      "battery": "Up to 8 hours",
+      "graphics": "NVIDIA GeForce RTX 3070",
+      "os": "Windows 11",
+      "screen_matrix": "IPS"
+    }
+  },
+  {
+    "category": "Laptops",
+    "brand": "Aorus",
+    "model": "15G",
+    "price": 1999.99,
+    "properties": {
+      "display": "15.6-inch Full HD",
+      "processor": "Intel Core i7-10870H",
+      "RAM": "16GB DDR4",
+      "storage": "512GB SSD",
+      "battery": "Up to 7 hours",
+      "graphics": "NVIDIA GeForce RTX 3070",
+      "os": "Windows 11",
+      "screen_matrix": "IPS"
+    }
+  },
+  {
+    "category": "Laptops",
+    "brand": "Razer",
+    "model": "Blade Stealth 13",
+    "price": 1599.99,
+    "properties": {
+      "display": "13.3-inch Full HD",
+      "processor": "Intel Core i7-1165G7",
+      "RAM": "16GB DDR4",
+      "storage": "512GB SSD",
+      "battery": "Up to 10 hours",
+      "graphics": "NVIDIA GeForce GTX 1650 Ti",
+      "os": "Windows 10",
+      "screen_matrix": "IPS"
+    }
+  },
+  {
+    "category": "Laptops",
+    "brand": "MSI",
+    "model": "Creator Z16",
+    "price": 2499.99,
+    "properties": {
+      "display": "16-inch 4K UHD",
+      "processor": "Intel Core i9-11900H",
+      "RAM": "32GB DDR4",
+      "storage": "2TB SSD",
+      "battery": "Up to 8 hours",
+      "graphics": "NVIDIA GeForce RTX 3060",
+      "os": "Windows 10",
+      "screen_matrix": "IPS"
+    }
+  },
+  {
+    "category": "Laptops",
+    "brand": "Acer",
+    "model": "Predator Helios 300",
+    "price": 1599.99,
+    "properties": {
+      "display": "15.6-inch Full HD",
+      "processor": "Intel Core i7-11800H",
+      "RAM": "8GB DDR4",
+      "storage": "1TB SSD",
+      "battery": "Up to 6 hours",
+      "graphics": "NVIDIA GeForce RTX 3060",
+      "os": "Windows 10",
+      "screen_matrix": "IPS"
+    }
+  },
+  {
+    "category": "Laptops",
+    "brand": "Lenovo",
+    "model": "Legion 7i",
+    "price": 1799.99,
+    "properties": {
+      "display": "15.6-inch Full HD",
+      "processor": "Intel Core i7-11800H",
+      "RAM": "16GB DDR5",
+      "storage": "1TB SSD",
+      "battery": "Up to 8 hours",
+      "graphics": "NVIDIA GeForce RTX 3080",
+      "os": "Windows 11",
+      "screen_matrix": "IPS"
+    }
+  },
+  {
+    "category": "Laptops",
+    "brand": "HP",
+    "model": "ENVY x360 15",
+    "price": 1499.75,
+    "properties": {
+      "display": "15.6-inch Full HD",
+      "processor": "AMD Ryzen 7 5700U",
+      "RAM": "16GB DDR4",
+      "storage": "512GB SSD",
+      "battery": "Up to 11 hours",
+      "graphics": "Integrated AMD Radeon Graphics",
+      "os": "Windows 11",
+      "screen_matrix": "IPS"
+    }
+  },
+  {
+    "category": "Laptops",
+    "brand": "Dell",
+    "model": "Dell XPS 15",
+    "price": 1599.99,
+    "properties": {
+      "display": "15.6 inches 4K UHD InfinityEdge Touch",
+      "processor": "Intel Core i7-11800H",
+      "RAM": "16GB DDR4",
+      "storage": "512GB SSD",
+      "graphics": "NVIDIA GeForce RTX 3050 Ti",
+      "os": "Windows 11",
+      "screen_matrix": "IPS",
+      "touchscreen": "Yes"
+    }
+  },
+  {
+    "category": "Laptops",
+    "brand": "Dell",
+    "model": "Dell Inspiron 15 7000",
+    "price": 899.99,
+    "properties": {
+      "display": "15.6 inches Full HD",
+      "processor": "Intel Core i5-11300H",
+      "RAM": "8GB DDR4",
+      "storage": "256GB SSD",
+      "graphics": "NVIDIA GeForce MX450",
+      "os": "Windows 10",
+      "screen_matrix": "TN"
+    }
+  },
+  {
+    "category": "Laptops",
+    "brand": "Dell",
+    "model": "Dell Latitude 7320",
+    "price": 1299.99,
+    "properties": {
+      "display": "13.3 inches Full HD",
+      "processor": "Intel Core i5-1145G7",
+      "RAM": "8GB LPDDR4x",
+      "storage": "256GB SSD",
+      "graphics": "Intel Iris Xe Graphics",
+      "os": "Windows 10",
+      "screen_matrix": "IPS",
+      "type_c_pd": "60W"
+    }
+  },
+  {
+    "category": "Laptops",
+    "brand": "HP",
+    "model": "HP Spectre x360 14",
+    "price": 1399.99,
+    "properties": {
+      "display": "13.5 inches 3K2K OLED Touch",
+      "processor": "Intel Core i7-1165G7",
+      "RAM": "16GB LPDDR4x",
+      "storage": "1TB SSD",
+      "graphics": "Intel Iris Xe Graphics",
+      "os": "Windows 10",
+      "screen_matrix": "TN"
+    }
+  },
+  {
+    "category": "Laptops",
+    "brand": "HP",
+    "model": "HP Envy 15",
+    "price": 1099.99,
+    "properties": {
+      "display": "15.6 inches 4K UHD Touch",
+      "processor": "Intel Core i7-1165G7",
+      "RAM": "16GB DDR4",
+      "storage": "512GB SSD",
+      "graphics": "NVIDIA GeForce GTX 1650 Ti",
+      "os": "Windows 11",
+      "screen_matrix": "IPS"
+    }
+  },
+  {
+    "category": "Laptops",
+    "brand": "HP",
+    "model": "HP Pavilion x360 14",
+    "price": 699.99,
+    "properties": {
+      "display": "14 inches Full HD Touch",
+      "processor": "Intel Core i5-1135G7",
+      "RAM": "8GB DDR4",
+      "storage": "512GB SSD",
+      "graphics": "Intel Iris Xe Graphics",
+      "os": "Windows 11",
+      "screen_matrix": "IPS"
+    }
+  },
+  {
+    "category": "Laptops",
+    "brand": "Lenovo",
+    "model": "Lenovo ThinkPad X1 Carbon",
+    "price": 1699.99,
+    "properties": {
+      "display": "14 inches WQHD",
+      "processor": "Intel Core i7-1165G7",
+      "RAM": "16GB LPDDR4x",
+      "storage": "512GB SSD",
+      "graphics": "Intel Iris Xe Graphics",
+      "os": "Windows 11",
+      "screen_matrix": "S-IPS",
+      "touchscreen": "Yes"
+    }
+  },
+  {
+    "category": "Laptops",
+    "brand": "Lenovo",
+    "model": "Lenovo Legion 5 Pro",
+    "price": 1399.99,
+    "properties": {
+      "display": "16 inches WQXGA",
+      "processor": "AMD Ryzen 7 5800H",
+      "RAM": "16GB DDR4",
+      "storage": "1TB SSD",
+      "graphics": "NVIDIA GeForce RTX 3060",
+      "os": "Windows 11",
+      "screen_matrix": "S-IPS"
+    }
+  },
+  {
+    "category": "Laptops",
+    "brand": "Lenovo",
+    "model": "Lenovo Yoga 9i",
+    "price": 1299.99,
+    "properties": {
+      "display": "14 inches 4K UHD Touch",
+      "processor": "Intel Core i7-1185G7",
+      "RAM": "16GB LPDDR4x",
+      "storage": "1TB SSD",
+      "graphics": "Intel Iris Xe Graphics",
+      "os": "Windows 10",
+      "screen_matrix": "IPS",
+      "fingerprint_reader": "Yes",
+      "touchscreen": "Yes"
+    }
+  },
+  {
+    "category": "Laptops",
+    "brand": "Apple",
+    "model": "MacBook Pro 13",
+    "price": 1299.99,
+    "properties": {
+      "display": "13.3 inches Retina",
+      "processor": "Apple M1 Chip",
+      "RAM": "8GB LPDDR4X",
+      "storage": "256GB SSD",
+      "graphics": "Apple M1",
+      "os": "macOS 13 Ventura",
+      "screen_matrix": "IPS",
+      "thunderbolt": "Yes",
+      "fingerprint_reader": "Yes"
+    }
+  },
+  {
+    "category": "Gaming Consoles",
+    "brand": "Sony",
+    "model": "PlayStation 5",
+    "price": 499.99,
+    "properties": {
+      "storage": "825GB SSD",
+      "resolution": "Up to 8K",
+      "controller": "DualSense Wireless Controller",
+      "games_included": "None",
+      "online_service": "PlayStation Plus",
+      "backward_compatibility": "Yes (PS4 games)"
+    }
+  },
+  {
+    "category": "Gaming Consoles",
+    "brand": "Microsoft",
+    "model": "Xbox Series X",
+    "price": 499.99,
+    "properties": {
+      "storage": "1TB SSD",
+      "resolution": "Up to 4K",
+      "controller": "Xbox Wireless Controller",
+      "games_included": "None",
+      "online_service": "Xbox Live Gold",
+      "backward_compatibility": "Yes (Xbox, Xbox 360, Xbox One games)"
+    }
+  },
+  {
+    "category": "Gaming Consoles",
+    "brand": "Nintendo",
+    "model": "Nintendo Switch",
+    "price": 299.99,
+    "properties": {
+      "storage": "32GB",
+      "resolution": "Up to 1080p (Docked), 720p (Handheld)",
+      "controller": "Joy-Con",
+      "games_included": "None",
+      "online_service": "Nintendo Switch Online",
+      "backward_compatibility": "No"
+    }
+  },
+  {
+    "category": "Gaming Consoles",
+    "brand": "Nintendo",
+    "model": "Nintendo Switch OLED Model",
+    "price": 349.99,
+    "properties": {
+      "storage": "64GB",
+      "resolution": "Up to 1080p (Docked), 720p (Handheld)",
+      "controller": "Joy-Con",
+      "games_included": "None",
+      "online_service": "Nintendo Switch Online",
+      "backward_compatibility": "No"
+    }
+  },
+  {
+    "category": "Gaming Consoles",
+    "brand": "Sony",
+    "model": "PlayStation 4 Pro",
+    "price": 399.99,
+    "properties": {
+      "storage": "1TB HDD",
+      "resolution": "Up to 4K",
+      "controller": "DualShock 4 Wireless Controller",
+      "games_included": "None",
+      "online_service": "PlayStation Plus",
+      "backward_compatibility": "Yes (PS4 games)"
+    }
+  },
+  {
+    "category": "Gaming Consoles",
+    "brand": "Microsoft",
+    "model": "Xbox One X",
+    "price": 399.99,
+    "properties": {
+      "storage": "1TB HDD",
+      "resolution": "Up to 4K",
+      "controller": "Xbox Wireless Controller",
+      "games_included": "None",
+      "online_service": "Xbox Live Gold",
+      "backward_compatibility": "Yes (Xbox, Xbox 360, Xbox One games)"
+    }
+  },
+  {
+    "category": "Gaming Consoles",
+    "brand": "Nintendo",
+    "model": "Nintendo Switch Lite",
+    "price": 199.99,
+    "properties": {
+      "storage": "32GB",
+      "resolution": "Up to 720p",
+      "controller": "Integrated controls",
+      "games_included": "None",
+      "online_service": "Nintendo Switch Online",
+      "backward_compatibility": "No"
+    }
+  },
+  {
+    "category": "TV",
+    "brand": "Samsung",
+    "model": "Samsung QN90A",
+    "price": 1999.99,
+    "properties": {
+      "screen_size": "55 inches",
+      "resolution": "4K UHD",
+      "panel_type": "QLED",
+      "refresh_rate": "120Hz",
+      "smart_features": "Samsung Tizen",
+      "HDR": "Quantum HDR 32X",
+      "backlight": "smart"
+    }
+  },
+  {
+    "category": "TV",
+    "brand": "Samsung",
+    "model": "Samsung Q80A",
+    "price": 1499.99,
+    "properties": {
+      "screen_size": "65 inches",
+      "resolution": "4K UHD",
+      "panel_type": "QLED",
+      "refresh_rate": "120Hz",
+      "smart_features": "Samsung Tizen",
+      "HDR": "Quantum HDR 12X"
+    }
+  },
+  {
+    "category": "TV",
+    "brand": "Samsung",
+    "model": "Samsung TU7000",
+    "price": 699.99,
+    "properties": {
+      "screen_size": "50 inches",
+      "resolution": "4K UHD",
+      "panel_type": "Crystal UHD",
+      "refresh_rate": "60Hz",
+      "smart_features": "Samsung Tizen",
+      "HDR": "HDR",
+      "backlight": "rgb"
+    }
+  },
+  {
+    "category": "TV",
+    "brand": "LG",
+    "model": "LG C1 OLED",
+    "price": 2299.99,
+    "properties": {
+      "screen_size": "55 inches",
+      "resolution": "4K UHD",
+      "panel_type": "OLED",
+      "refresh_rate": "120Hz",
+      "smart_features": "webOS",
+      "HDR": "Dolby Vision IQ",
+      "backlight": "smart"
+    }
+  },
+  {
+    "category": "TV",
+    "brand": "LG",
+    "model": "LG NanoCell 85 Series",
+    "price": 1599.99,
+    "properties": {
+      "screen_size": "65 inches",
+      "resolution": "4K UHD",
+      "panel_type": "NanoCell",
+      "refresh_rate": "120Hz",
+      "smart_features": "webOS",
+      "HDR": "Dolby Vision IQ"
+    }
+  },
+  {
+    "category": "TV",
+    "brand": "LG",
+    "model": "LG UN7300",
+    "price": 799.99,
+    "properties": {
+      "screen_size": "55 inches",
+      "resolution": "4K UHD",
+      "panel_type": "IPS",
+      "refresh_rate": "60Hz",
+      "smart_features": "webOS",
+      "HDR": "Active HDR"
+    }
+  },
+  {
+    "category": "TV",
+    "brand": "Sony",
+    "model": "Sony A80J",
+    "price": 2499.99,
+    "properties": {
+      "screen_size": "55 inches",
+      "resolution": "4K UHD",
+      "panel_type": "OLED",
+      "refresh_rate": "120Hz",
+      "smart_features": "Android TV",
+      "HDR": "HDR10, Dolby Vision",
+      "backlight": "smart"
+    }
+  },
+  {
+    "category": "TV",
+    "brand": "Sony",
+    "model": "Sony X90J",
+    "price": 1799.99,
+    "properties": {
+      "screen_size": "65 inches",
+      "resolution": "4K UHD",
+      "panel_type": "LED",
+      "refresh_rate": "120Hz",
+      "smart_features": "Android TV",
+      "HDR": "HDR10, Dolby Vision, HLG"
+    }
+  },
+  {
+    "category": "TV",
+    "brand": "Sony",
+    "model": "Sony X800H",
+    "price": 999.99,
+    "properties": {
+      "screen_size": "55 inches",
+      "resolution": "4K UHD",
+      "panel_type": "LED",
+      "refresh_rate": "60Hz",
+      "smart_features": "Android TV",
+      "HDR": "HDR10, HLG"
+    }
+  },
+  {
+    "category": "TV",
+    "brand": "Samsung",
+    "model": "Samsung Q70T",
+    "price": 1299.99,
+    "properties": {
+      "screen_size": "65 inches",
+      "resolution": "4K UHD",
+      "panel_type": "QLED",
+      "refresh_rate": "120Hz",
+      "smart_features": "Samsung Tizen",
+      "HDR": "Quantum HDR"
+    }
+  },
+  {
+    "category": "TV",
+    "brand": "LG",
+    "model": "LG GX OLED",
+    "price": 2799.99,
+    "properties": {
+      "screen_size": "65 inches",
+      "resolution": "4K UHD",
+      "panel_type": "OLED",
+      "refresh_rate": "120Hz",
+      "smart_features": "webOS",
+      "HDR": "Dolby Vision IQ"
+    }
+  },
+  {
+    "category": "TV",
+    "brand": "Sony",
+    "model": "Sony X85J",
+    "price": 1499.99,
+    "properties": {
+      "screen_size": "65 inches",
+      "resolution": "4K UHD",
+      "panel_type": "LED",
+      "refresh_rate": "120Hz",
+      "smart_features": "Android TV",
+      "HDR": "HDR10, Dolby Vision, HLG",
+      "backlight": "rgb"
+    }
+  },
+  {
+    "category": "TV",
+    "brand": "Samsung",
+    "model": "Samsung Q60T",
+    "price": 999.99,
+    "properties": {
+      "screen_size": "55 inches",
+      "resolution": "4K UHD",
+      "panel_type": "QLED",
+      "refresh_rate": "60Hz",
+      "smart_features": "Samsung Tizen",
+      "HDR": "HDR"
+    }
+  },
+  {
+    "category": "TV",
+    "brand": "LG",
+    "model": "LG BX OLED",
+    "price": 1999.99,
+    "properties": {
+      "screen_size": "55 inches",
+      "resolution": "4K UHD",
+      "panel_type": "OLED",
+      "refresh_rate": "120Hz",
+      "smart_features": "webOS",
+      "HDR": "Dolby Vision IQ"
+    }
+  },
+  {
+    "category": "TV",
+    "brand": "Sony",
+    "model": "Sony X80J",
+    "price": 1099.99,
+    "properties": {
+      "screen_size": "55 inches",
+      "resolution": "4K UHD",
+      "panel_type": "LED",
+      "refresh_rate": "60Hz",
+      "smart_features": "Android TV",
+      "HDR": "HDR",
+      "backlight": "smart"
+    }
+  },
+  {
+    "category": "Headphones",
+    "brand": "Sony",
+    "model": "Sony WH-1000XM4",
+    "price": 349.99,
+    "properties": {
+      "type": "Over-ear",
+      "wireless": "Yes",
+      "noise_cancelling": "Yes",
+      "water_resistance": "Yes",
+      "battery_life": "Up to 30 hours",
+      "color": "Black"
+    }
+  },
+  {
+    "category": "Headphones",
+    "brand": "Sony",
+    "model": "Sony WF-1000XM4",
+    "price": 279.99,
+    "properties": {
+      "type": "True wireless earbuds",
+      "wireless": "Yes",
+      "noise_cancelling": "Yes",
+      "battery_life": "Up to 8 hours (ANC on), Up to 12 hours (ANC off)",
+      "color": "Silver"
+    }
+  },
+  {
+    "category": "Headphones",
+    "brand": "Sony",
+    "model": "Sony WH-XB910N",
+    "price": 199.99,
+    "properties": {
+      "type": "Over-ear",
+      "wireless": "Yes",
+      "noise_cancelling": "Yes",
+      "battery_life": "Up to 30 hours",
+      "color": "Blue"
+    }
+  },
+  {
+    "category": "Headphones",
+    "brand": "Bose",
+    "model": "Bose QuietComfort 45",
+    "price": 329.99,
+    "properties": {
+      "type": "Over-ear",
+      "wireless": "Yes",
+      "noise_cancelling": "Yes",
+      "water_resistance": "Yes",
+      "battery_life": "Up to 24 hours",
+      "color": "Black"
+    }
+  },
+  {
+    "category": "Headphones",
+    "brand": "Bose",
+    "model": "Bose Sport Earbuds",
+    "price": 179.99,
+    "properties": {
+      "type": "True wireless earbuds",
+      "wireless": "Yes",
+      "noise_cancelling": "No",
+      "battery_life": "Up to 5 hours",
+      "color": "Triple Black"
+    }
+  },
+  {
+    "category": "Headphones",
+    "brand": "Bose",
+    "model": "Bose SoundLink Around-Ear Wireless Headphones II",
+    "price": 229.99,
+    "properties": {
+      "type": "Over-ear",
+      "wireless": "Yes",
+      "noise_cancelling": "No",
+      "battery_life": "Up to 15 hours",
+      "color": "White"
+    }
+  },
+  {
+    "category": "Headphones",
+    "brand": "Sennheiser",
+    "model": "Sennheiser Momentum 3 Wireless",
+    "price": 349.95,
+    "properties": {
+      "type": "Over-ear",
+      "wireless": "Yes",
+      "noise_cancelling": "Yes",
+      "battery_life": "Up to 17 hours",
+      "color": "Black"
+    }
+  },
+  {
+    "category": "Headphones",
+    "brand": "Sennheiser",
+    "model": "Sennheiser HD 660 S",
+    "price": 499.95,
+    "properties": {
+      "type": "Over-ear",
+      "wireless": "No",
+      "noise_cancelling": "No",
+      "color": "Black"
+    }
+  },
+  {
+    "category": "Smartwatches",
+    "brand": "Apple",
+    "model": "Apple Watch Series 7",
+    "price": 399.99,
+    "properties": {
+      "display": "Always-On Retina display",
+      "water_resistance": "50 meters",
+      "heart_rate_monitor": "Yes",
+      "gps": "Yes",
+      "battery_life": "Up to 18 hours",
+      "smartphone_sync": "iOS 13+",
+      "color": "Midnight"
+    }
+  },
+  {
+    "category": "Smartwatches",
+    "brand": "Samsung",
+    "model": "Samsung Galaxy Watch 4",
+    "price": 349.99,
+    "properties": {
+      "display": "Super AMOLED display",
+      "water_resistance": "50 meters",
+      "heart_rate_monitor": "Yes",
+      "gps": "Yes",
+      "battery_life": "Up to 40 hours",
+      "smartphone_sync": "Android 12+",
+      "color": "Phantom Black"
+    }
+  },
+  {
+    "category": "Smartwatches",
+    "brand": "Huawei",
+    "model": "Huawei Watch GT 2 Pro",
+    "price": 299.99,
+    "properties": {
+      "display": "AMOLED display",
+      "water_resistance": "50 meters",
+      "heart_rate_monitor": "Yes",
+      "gps": "Yes",
+      "battery_life": "Up to 14 days",
+      "color": "Night Black"
+    }
+  },
+  {
+    "category": "Smartwatches",
+    "brand": "Apple",
+    "model": "Apple Watch SE",
+    "price": 279.99,
+    "properties": {
+      "display": "Retina display",
+      "water_resistance": "50 meters",
+      "heart_rate_monitor": "Yes",
+      "gps": "Yes",
+      "battery_life": "Up to 18 hours",
+      "smartphone_sync": "iOS 12+",
+      "color": "Silver"
+    }
+  },
+  {
+    "category": "Smartwatches",
+    "brand": "Samsung",
+    "model": "Samsung Galaxy Watch Active 2",
+    "price": 249.99,
+    "properties": {
+      "display": "Super AMOLED display",
+      "water_resistance": "50 meters",
+      "heart_rate_monitor": "Yes",
+      "gps": "Yes",
+      "battery_life": "Up to 44 hours",
+      "color": "Cloud Silver"
+    }
+  },
+  {
+    "category": "Smartwatches",
+    "brand": "Huawei",
+    "model": "Huawei Watch Fit",
+    "price": 129.99,
+    "properties": {
+      "display": "AMOLED display",
+      "water_resistance": "50 meters",
+      "heart_rate_monitor": "Yes",
+      "gps": "Yes",
+      "battery_life": "Up to 10 days",
+      "color": "Graphite Black"
+    }
+  }
+]

@@ -1,0 +1,41 @@
+#!/usr/bin/env just --justfile
+set dotenv-load
+set export
+
+venv := "venv"
+pip := "$venv/bin/pip"
+python := "$venv/bin/python"
+
+venv:
+    @[ -d {{venv}} ] || (python3 -m venv {{venv}} && {{pip}} install -r requirements.txt)
+
+help: venv
+    {{python}} main.py -h
+
+populate: venv
+    {{python}} main.py populate
+
+truncate: venv
+    {{python}} main.py truncate
+
+run_tasks table: venv
+    {{python}} main.py run_{{table}}_tasks
+
+run action: venv
+    {{python}} main.py {{action}}
+
+
+cqlsh:
+    ./tasks.sh
+
+cqlsh_manual:
+    sudo docker compose exec cassandra-1 cqlsh -k $CASSANDRA_KEYSPACE
+
+start:
+    sudo docker compose up -d
+
+stop:
+    sudo docker compose down
+
+logs:
+    sudo docker compose logs -f
