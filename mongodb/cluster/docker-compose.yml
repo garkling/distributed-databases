@@ -1,0 +1,84 @@
+networks:
+  mongo-cluster:
+
+services:
+  mongo-1:
+    image: mongo:7.0
+    hostname: server1
+
+    volumes:
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+      - ./mongod.conf:/etc/mongo/mongod.conf
+      - ./mongodb.key:/etc/mongo/keys/mongodb.key
+      - ./tasks/:/tasks/
+
+      - ./logs/server1.log:/data/db/mongod.log
+    env_file:
+      - .env
+
+    command: --bind_ip localhost,server1 --config /etc/mongo/mongod.conf
+    networks:
+      - mongo-cluster
+
+  mongo-2:
+    image: mongo:7.0
+    hostname: server2
+
+    volumes:
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+      - ./mongod.conf:/etc/mongo/mongod.conf
+      - ./mongodb.key:/etc/mongo/keys/mongodb.key
+      - ./tasks/:/tasks/
+
+      - ./logs/server2.log:/data/db/mongod.log
+    env_file:
+      - .env
+
+    depends_on:
+      - mongo-1
+
+    command: --bind_ip localhost,server2 --config /etc/mongo/mongod.conf
+    networks:
+      - mongo-cluster
+
+  mongo-3:
+    image: mongo:7.0
+    hostname: server3
+
+    volumes:
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+      - ./mongod.conf:/etc/mongo/mongod.conf
+      - ./mongodb.key:/etc/mongo/keys/mongodb.key
+      - ./tasks/:/tasks/
+
+      - ./logs/server3.log:/data/db/mongod.log
+    env_file:
+      - .env
+
+    depends_on:
+      - mongo-2
+
+    command: --bind_ip localhost,server3 --config /etc/mongo/mongod.conf
+    networks:
+      - mongo-cluster
+
+  rs-init:
+    image: mongo:7.0
+
+    volumes:
+      - ./1_rs-init.js:/1_rs-init.js
+
+    command:
+      - '/bin/sh'
+      - '-c'
+      - '/bin/sleep 15 && /usr/bin/mongosh --host server1 /1_rs-init.js'
+    env_file:
+      - .env
+
+    networks:
+      - mongo-cluster
+
+    depends_on:
+      - mongo-1
+      - mongo-2
+      - mongo-3

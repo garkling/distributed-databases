@@ -1,6 +1,6 @@
 # `MongoDB` query translator using Python operators and methods
 ### A utility designed to interact with MongoDB using [`pymongo`](https://pypi.org/project/pymongo/) by leveraging Python's operator overloading mechanism to translate Python conditional statements into MongoDB queries.
-
+### See [Cluster](cluster) for Replica Set operations
 ## Modes
 
 ### **Playground / query executor**

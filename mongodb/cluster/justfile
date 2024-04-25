@@ -1,0 +1,25 @@
+#!/usr/bin/env just --justfile
+
+
+run_tasks:
+    ./tasks.sh
+
+mongosh server:
+    docker compose exec -it {{server}} mongosh
+
+server-bash server:
+    docker compose exec -it {{server}} bash
+
+
+start:
+    docker compose up -d
+
+stop:
+    docker compose down
+
+restart:
+    just stop
+    just start
+
+logs:
+    docker compose logs -f
