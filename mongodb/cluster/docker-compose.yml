@@ -71,7 +71,7 @@ services:
     command:
       - '/bin/sh'
       - '-c'
-      - '/bin/sleep 15 && /usr/bin/mongosh --host server1 /1_rs-init.js'
+      - '/bin/sleep 20 && /usr/bin/mongosh --host server1 /1_rs-init.js'
     env_file:
       - .env
 
