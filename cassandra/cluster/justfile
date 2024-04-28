@@ -1,0 +1,34 @@
+#!/usr/bin/env just --justfile
+run_tasks:
+    ./tasks.sh
+
+cqlsh server ks:
+    docker compose exec -it {{server}} cqlsh -k {{ks}}
+
+server_bash server:
+    docker compose exec -it {{server}} bash
+
+
+start:
+    docker compose up -d
+
+stop:
+    docker compose down
+
+restart:
+    just stop
+    just start
+
+logs:
+    docker compose logs -f
+
+split_cluster:
+    sudo docker network disconnect cassandra-cluster cluster-cassandra-1-1
+    sudo docker network disconnect cassandra-cluster cluster-cassandra-2-1
+    sudo docker network disconnect cassandra-cluster cluster-cassandra-3-1
+
+join_cluster:
+    sudo docker network connect cassandra-cluster cluster-cassandra-1-1
+    sudo docker network connect cassandra-cluster cluster-cassandra-2-1
+    sudo docker network connect cassandra-cluster cluster-cassandra-3-1
+

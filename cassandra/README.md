@@ -1,5 +1,6 @@
 # `Cassandra` data modeling and basic operations
 ### A simple store data model in CQL demonstrating the functionality of indexes, primary keys, and materialized views.
+### See [Cluster](cluster) for replication/consistency tests
 
 
 ## Run

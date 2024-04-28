@@ -1,0 +1,108 @@
+networks:
+  cassandra-cluster:
+    name: cassandra-cluster
+
+
+services:
+  cassandra-1:
+    image: cassandra:latest
+    hostname: server1
+    restart: on-failure
+
+    volumes:
+      - ./cassandra.yaml:/etc/cassandra/cassandra.yaml
+      - ./tasks:/tasks
+
+    environment:
+      - MAX_HEAP_SIZE
+      - HEAP_NEWSIZE
+
+    networks:
+      - cassandra-cluster
+
+    healthcheck:
+      test: ["CMD-SHELL", "nodetool status"]
+      interval: 2m
+      start_period: 2m
+      timeout: 10s
+      retries: 3
+
+  cassandra-2:
+    image: cassandra:latest
+    hostname: server2
+    restart: on-failure
+
+    volumes:
+      - ./cassandra.yaml:/etc/cassandra/cassandra.yaml
+      - ./tasks:/tasks
+
+    environment:
+      - MAX_HEAP_SIZE
+      - HEAP_NEWSIZE
+      - CASSANDRA_SEEDS=server1
+
+    depends_on:
+      cassandra-1:
+        condition: service_healthy
+
+    networks:
+      - cassandra-cluster
+
+    healthcheck:
+      test: ["CMD-SHELL", "nodetool status"]
+      interval: 2m
+      start_period: 2m
+      timeout: 10s
+      retries: 3
+
+  cassandra-3:
+    image: cassandra:latest
+    hostname: server3
+    restart: on-failure
+
+    volumes:
+      - ./cassandra.yaml:/etc/cassandra/cassandra.yaml
+      - ./tasks:/tasks
+
+    environment:
+      - MAX_HEAP_SIZE
+      - HEAP_NEWSIZE
+      - CASSANDRA_SEEDS=server1
+
+    depends_on:
+      cassandra-2:
+        condition: service_healthy
+
+    networks:
+      - cassandra-cluster
+
+    healthcheck:
+      test: ["CMD-SHELL", "nodetool status"]
+      interval: 2m
+      start_period: 2m
+      timeout: 10s
+      retries: 3
+
+  seeder:
+    image: cassandra:latest
+
+    depends_on:
+      cassandra-1:
+        condition: service_healthy
+      cassandra-2:
+        condition: service_healthy
+      cassandra-3:
+        condition: service_healthy
+
+    volumes:
+      - ./schema:/schema
+
+    networks:
+      - cassandra-cluster
+
+    command:
+      - /bin/bash
+      - -c
+      - "cqlsh server1 -f /schema/gps_tracking.cql && 
+         cqlsh server2 -f /schema/gps_statistics.cql && 
+         cqlsh server3 -f /schema/gps_logging.cql"
